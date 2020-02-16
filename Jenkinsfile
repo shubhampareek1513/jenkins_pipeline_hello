@@ -1,18 +1,14 @@
-node {
-    stage('build'){
-        echo "building"
-    }
-}
-node {
-    stage('test'){
-        echo "testing"
-    }
-}
-stage('Get approval'){
-    input "Deploy to qa?"
-}
-node {
-    stage('deploy to qa'){
-        echo "deploying"
-    }
-}
+pipline 
+ {
+ agent any
+ stages
+ {
+ stage('scm checkout')
+ {
+ 
+ steps {
+ 
+ branch: 'master,git:"git 'https://github.com/shubhampareek1513/jenkins_pipeline_hello.git'"
+ 
+ }
+ }
