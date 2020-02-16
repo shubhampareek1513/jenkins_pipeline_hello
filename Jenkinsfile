@@ -8,7 +8,7 @@ stage('scm checkout')
 {
 steps{
 
-git branch: 'master',url:git 'https://github.com/shubhampareek1513/jenkins_pipeline_hello.git'
+git branch: 'master', url: 'https://github.com/shubhampareek1513/jenkins_pipeline_hello.git'
 
 }
 }
